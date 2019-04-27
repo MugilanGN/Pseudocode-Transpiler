@@ -85,7 +85,7 @@ def identify(text):
         #Searches for INPUT statements (Regulars)
         
         statement = re.search(input_re,text).group(1)
-        statement = indent * "  " + statement + " = eval(input())"
+        statement = indent * "  " + statement + " = check(input())"
 
         return statement
 
@@ -184,7 +184,7 @@ def write(lines):
 
 def main():
     
-    global indent,lines
+    global indent,lines,check
 
     file = open("compiled.py","w")
     file.write("\n")
@@ -194,6 +194,25 @@ def main():
     lines = []
     filtered = ""
     count = 0
+    
+    check = """
+def check(s):
+    try:
+        return int(s)
+    except ValueError:
+        try:
+            return float(s)
+        except ValueError:
+            if(s == "True"):
+                return True
+            elif(s == "False"):
+                return False
+            else:
+                return(s)
+                """
+                
+    
+    lines.append(check)
     
     while filtered != "STOP":
         
