@@ -20,37 +20,37 @@ The delimiters are not needed as there are closing statements for all the block 
 In every pseudocode program, there must be a **STOP** statmement at the very end to signify that the program is finished. Without it there will be list index errors sent.
 
 ### If statements 
-  IF condition THEN - if statement where condition can be "x > 5", "5!=6", etc
+  **IF condition THEN** - if statement where condition can be "x > 5", "5!=6", etc
 
-  ELSE IF condition THEN - Else if where condition is an argument. Can be used as many times as needed in one IF block
+  **ELSE IF condition THEN** - Else if where condition is an argument. Can be used as many times as needed in one IF block
 
-  ELSE - else statement
+  **ELSE** - else statement
 
-  ENDIF - ends and if statement
+  **ENDIF** - ends and if statement
 
 ### For statements
   
-  FOR i = x TO y - i is the variable being incremented. x is the starting value, and y is the end value. As python code it would look like           for i in range(x,y)
+  **FOR i = x TO y** - i is the variable being incremented. x is the starting value, and y is the end value. As python code it would look like           for i in range(x,y)
   
-  NEXT - Ends the for statement just like how ENDIF ends an if statement. Anything after this is outside the FOR statement block
+  **NEXT** - Ends the for statement just like how ENDIF ends an if statement. Anything after this is outside the FOR statement block
   
 ### While statements
   
-  WHILE condition DO - A while loop is started where everything following the statement till the ENDWHILE is within the WHILE block
+  **WHILE condition DO** - A while loop is started where everything following the statement till the ENDWHILE is within the WHILE block
                         Condition is just another condition like x>6
    
-  ENDWHILE - Closes the WHILE loop
+  **ENDWHILE** - Closes the WHILE loop
   
 ### REPEAT statements
 
-  REPEAT - starts the repeat loop
+  **REPEAT** - starts the repeat loop
   
-  UNTIL condition - closes the REPEAT loop once the condition has been satisfied. Substitute condition with something like x > 6
+ **UNTIL** condition - closes the REPEAT loop once the condition has been satisfied. Substitute condition with something like x > 6
   
 ### Other statements
   
-  OUTPUT x - x is the value to be outputted. x can be a variable, string, boolean, float, etc. Ex: **OUTPUT "hello"**, **OUTPUT True**
+  **OUTPUT x** - x is the value to be outputted. x can be a variable, string, boolean, float, etc. Ex: **OUTPUT "hello"**, **OUTPUT True**
   
-  INPUT x - x is the name of the variable which is going to be inputted. The compiled version of **INPUT x** will be **x 
+  **INPUT x** - x is the name of the variable which is going to be inputted. The compiled version of **INPUT x** will be **x 
             = eval(input())** 
 
