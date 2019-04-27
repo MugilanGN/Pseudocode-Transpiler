@@ -51,6 +51,5 @@ In every pseudocode program, there must be a **STOP** statmement at the very end
   
   **OUTPUT x** - x is the value to be outputted. x can be a variable, string, boolean, float, etc. Ex: **OUTPUT "hello"**, **OUTPUT True**
   
-  **INPUT x** - x is the name of the variable which is going to be inputted. The compiled version of **INPUT x** will be **x 
-            = eval(input())** 
+  **INPUT x** - x is the name of the variable which is going to be inputted. The compiled version of **INPUT x** will be **x = check(input())** where check() is a function that determines and sets the input's data type for you
 
