@@ -3,17 +3,17 @@ Compiles pseudocode into python. It isn't a traditional compiler as it uses regu
 
 ## How to use
 
-Inside the Pseudocode folder, there will be three files. The file know as **enter.txt** will be the one where you type your pseudocode. After typing your Pseudocode save the text file.
+Inside the Pseudocode folder, there will be three files. The file known as **enter.txt** will be the one where you type your pseudocode. After typing your Pseudocode save the text file.
 
-Next, run the **Compiler.py** program. This will compile the pseudocode in the enter.txt file, and save the python code into the **Compiled.py**
+Next, run the **Compiler.py** program. This will compile the pseudocode in the enter.txt file, and it will save the generated python code in the **Compiled.py**
 
-The Compiler.py will immdiately run Compiled.py after creating it. This means that your pseudocode program will get executed automatically after compiling.
+The Compiler.py will immediately run Compiled.py after creating it. This means that your pseudocode program will get executed automatically after compiling.
 
-If you want to store or edit the generated Python code, you can look inside **Compiled.py**. Where it will be written to.
+If you want to store or edit the generated Python code, you can look inside **Compiled.py**, where it will be written to.
 
 ## Syntax
 
-The language is case sensitive. All keywords must be capitalized. Indenting doesnt matter either.There are no delimiters either (semicolon in java, etc). Due to being built on top of Python, anything not in the below documentation can be emulated using Python syntax. One key use of this is for comparisons and list operations.
+The language is case sensitive. All keywords must be capitalized. Indenting doesnt matter. There are no delimiters either (semicolon in java, etc). Due to being built on top of Python, anything not in the below documentation can be emulated using Python syntax. One key use of this is for comparisons and list operations.
 
 The delimiters are not needed as there are closing statements for all the block statements (IF, WHILE, FOR, ETC). These closing statements (ENDIF, ENDWHILE, NEXT) are **extremely important**. Never forget them or else the program won't work.
 
