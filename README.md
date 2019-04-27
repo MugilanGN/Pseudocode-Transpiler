@@ -45,7 +45,7 @@ In every pseudocode program, there must be a **STOP** statmement at the very end
 
   **REPEAT** - starts the repeat loop
   
- **UNTIL** condition - closes the REPEAT loop once the condition has been satisfied. Substitute condition with something like x > 6
+ **UNTIL condition** - closes the REPEAT loop once the condition has been satisfied. Substitute condition with something like x > 6
   
 ### Other statements
   
