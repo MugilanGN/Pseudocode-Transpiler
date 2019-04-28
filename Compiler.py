@@ -15,7 +15,7 @@ def identify(text):
     while_re = re.compile(r'^WHILE\s(.+)\sDO$')
     endwhile_re = re.compile(r'^ENDWHILE$')
 
-    for_re = re.compile(r'^FOR\s(.+)\s=\s(.+)\sTO\s(.+)')
+    for_re = re.compile(r'^FOR\s(.+)\s<-\s(.+)\sTO\s(.+)')
     next_re = re.compile(r'^NEXT$')
 
     repeat_re = re.compile(r'^REPEAT$')
@@ -85,7 +85,7 @@ def identify(text):
         #Searches for INPUT statements (Regulars)
         
         statement = re.search(input_re,text).group(1)
-        statement = indent * "  " + statement + " = check(input())"
+        statement = indent * "  " + statement + " <- check(input())"
 
         return statement
 
@@ -219,8 +219,13 @@ def check(s):
         text = read(count)
         filtered = identify(text)
         
-        if (filtered != "STOP" and filtered != None): 
+        if (filtered != "STOP" and filtered != None):
+            
+           filtered = re.sub("=","==",filtered)
+           filtered = re.sub("<-","=",filtered)
+
            lines.append(filtered)
+           
         else:
             pass
 
