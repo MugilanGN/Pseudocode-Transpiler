@@ -15,7 +15,7 @@ def identify(text):
     while_re = re.compile(r'^WHILE\s(.+)\sDO$')
     endwhile_re = re.compile(r'^ENDWHILE$')
 
-    for_re = re.compile(r'^FOR\s(.+)\s=\s(.+)\sTO\s(.+)')
+    for_re = re.compile(r'^FOR\s(.+)\s<-\s(.+)\sTO\s(.+)')
     next_re = re.compile(r'^NEXT$')
 
     repeat_re = re.compile(r'^REPEAT$')
@@ -225,6 +225,8 @@ def check(s):
             pass
 
         count+= 1
+        
+    lines.append("r = input() #line that halts execution so program won't close")
 
     write(lines)
 
