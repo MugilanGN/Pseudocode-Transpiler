@@ -26,11 +26,11 @@ In every pseudocode program, there must be a **STOP** statmement at the very end
 
   **ELSE** - else statement
 
-  **ENDIF** - ends and if statement
+  **ENDIF** - ends an if statement
 
 ### For statements
   
-  **FOR i = x TO y** - i is the variable being incremented. x is the starting value, and y is the end value. As python code it would look like           **for i in range(x,y)**
+  **FOR i <- x TO y** - i is the variable being incremented. x is the starting value, and y is the end value. As python code it would look like           **for i in range(x,y)**
   
   **NEXT** - Ends the for statement just like how ENDIF ends an if statement. Anything after this is outside the FOR statement block
   
