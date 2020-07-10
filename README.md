@@ -19,37 +19,63 @@ The delimiters are not needed as there are closing statements for all the block 
 
 In every pseudocode program, there must be a **STOP** statmement at the very end to signify that the program is finished. Without it there will be list index errors sent.
 
-### If statements 
-  **IF condition THEN** - if statement where condition can be "x > 5", "5!=6", etc
+### Syntax Guide
 
-  **ELSE IF condition THEN** - Else if where condition is an argument. Can be used as many times as needed in one IF block
+ #### Input and Output:
 
-  **ELSE** - else statement
+  - INPUT x 
+  - OUTPUT x
 
-  **ENDIF** - ends an if statement
+   ```sh
+   INPUT X
+   OUTPUT var
+   OUTPUT "hello"
+   ```
+#### IF statements:
+  - IF condition THEN
+  - ELSE
+  - ENDIF
+  
+  ```sh
+  IF x < 3 THEN
+    OUTPUT X
+  ELSE
+    OUTPUT x*2
+  ENDIF
+  ```
+  The else statement is optional (ENDIF is still necessary)
+  
+   ```sh
+  IF x < 3 THEN
+    OUTPUT X
+  ENDIF
+  ```
+  
+  #### Process-type blocks:
 
-### For statements
+  ```sh
+  x = x + 1
+  y = x / 2
+  ```
   
-  **FOR i <- x TO y** - i is the variable being incremented. x is the starting value, and y is the end value. As python code it would look like           **for i in range(x,y)**
+  #### While loops:
+
+  - WHILE condition DO
+  - ENDWHILE
   
-  **NEXT** - Ends the for statement just like how ENDIF ends an if statement. Anything after this is outside the FOR statement block
-  
-### While statements
-  
-  **WHILE condition DO** - A while loop is started where everything following the statement till the ENDWHILE is within the WHILE block
-                        Condition is just another condition like x>6
+  ```sh
+  WHILE x < 5 DO
+    OUTPUT x
+  ENDWHILE
+  ```
+  #### For loops:
    
-  **ENDWHILE** - Closes the WHILE loop
+  - FOR var <- start TO end
+  - NEXT var
   
-### REPEAT statements
-
-  **REPEAT** - starts the repeat loop
-  
- **UNTIL condition** - closes the REPEAT loop once the condition has been satisfied. Substitute condition with something like x > 6
-  
-### Other statements
-  
-  **OUTPUT x** - x is the value to be outputted. x can be a variable, string, boolean, float, etc. Ex: **OUTPUT "hello"**, **OUTPUT True**
-  
-  **INPUT x** - x is the name of the variable which is going to be inputted. The compiled version of **INPUT x** will be **x = check(input())** where check() is a function that determines and sets the input's data type for you
+  ```sh
+  FOR i <- 1 TO 5
+    OUTPUT i
+  NEXT i
+  ```
 
