@@ -43,13 +43,6 @@ In every pseudocode program, there must be a **STOP** statmement at the very end
     OUTPUT x*2
   ENDIF
   ```
-  The else statement is optional (ENDIF is still necessary)
-  
-   ```sh
-  IF x < 3 THEN
-    OUTPUT X
-  ENDIF
-  ```
   
   #### Process-type blocks:
 
