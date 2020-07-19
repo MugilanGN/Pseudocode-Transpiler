@@ -69,6 +69,6 @@ In every pseudocode program, there must be a **STOP** statmement at the very end
   ```sh
   FOR i <- 1 TO 5
     OUTPUT i
-  NEXT i
+  NEXT
   ```
 
