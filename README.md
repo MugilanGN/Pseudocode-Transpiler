@@ -1,4 +1,4 @@
-# Pseudocode-Compiler
+# Pseudocode-Transpiler
 Compiles pseudocode into python. It isn't a traditional compiler as it uses regular expressions to evaluate statements. In fact Im assuming that the correct term is "Transcompiler" as the pseudocode you enter has a pythonic structure
 
 ## How to use
